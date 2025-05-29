@@ -4,11 +4,11 @@ import { Fragment } from "react";
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  <Fragment>
+  <>
     <Header />
     <Body />
     <Footer />
-  </Fragment>
+  </>
 );
 
 function Header() {
