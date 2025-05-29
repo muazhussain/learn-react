@@ -1,48 +1,16 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 
-function MyAwesomeNavbar() {
+createRoot(document.getElementById("root")).render(<WhyIAmLearningReact />);
+
+function WhyIAmLearningReact() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">
-              Home
-            </a>
-            <a className="nav-link" href="#">
-              Features
-            </a>
-            <a className="nav-link" href="#">
-              Pricing
-            </a>
-            <a className="nav-link disabled" aria-disabled="true">
-              Disabled
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <main>
+      <h3>Why I am learning React: </h3>
+      <ol>
+        <li>For handling monitoring tool</li>
+        <li>For becoming a true full stack engineer</li>
+        <li>Make me more an independent person</li>
+      </ol>
+    </main>
   );
 }
-
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <MyAwesomeNavbar />
-  </StrictMode>
-);
