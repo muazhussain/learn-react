@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import Header from "./Header";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -7,8 +8,7 @@ root.render(<Page />);
 function Page() {
   return (
     <>
-      <h1>Hello React!</h1>
-      <h2>Welcome Back!</h2>
+      <Header />
     </>
   );
 }
